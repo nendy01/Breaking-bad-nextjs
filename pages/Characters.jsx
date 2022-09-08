@@ -9,9 +9,7 @@ const Characters = ({ characters }) => {
   return (
     <Layout title="Characters">
       <div className='characters'>{characters &&
-        characters.map(character => <Character key={character.char_id} character={character} />)
-
-      }</div>
+        characters.map(character => <Character key={character.char_id} character={character} />)}</div>
 
       <style jsx>
         {`
@@ -20,6 +18,7 @@ const Characters = ({ characters }) => {
         display:grid ;
         grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
         grid-auto-rows:140px;
+        grid-row-gap:1rem;
       }
         `}
       </style>

@@ -3,6 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-img {
+.i-image {
+  border-radius: 30px;
+}
+.small-img {
+  width: 100px;
   height: 140px;
+}
+.small-img img {
+  border-radius: 1rem;
 }

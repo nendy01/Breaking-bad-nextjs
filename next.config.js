@@ -2,11 +2,6 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  experimental: {
-    images: {
-      allowFutureImage: true,
-    },
-  },
   images: {
     domains: [
       "https://www.breakingbadapi.com",
@@ -19,6 +14,11 @@ const nextConfig = {
       "static.wikia.nocookie.net",
       "m.media-amazon.com",
     ],
+  },
+  experimental: {
+    images: {
+      allowFutureImage: true,
+    },
   },
 };
 

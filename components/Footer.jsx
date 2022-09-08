@@ -1,8 +1,10 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react'
 
 const Footer = () => {
   return (
-    <footer>Footer
+    <footer>
+      <p>&copy; website created by "@julio torres"</p>
 
       <style jsx>
         {`

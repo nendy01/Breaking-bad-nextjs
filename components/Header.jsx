@@ -2,27 +2,12 @@ import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 
 const Header = ({ title }) => {
-  const [quote, setQuote] = useState("")
-
-
-  useEffect(() => {
-    console.log("moto moto");
-    const url = "https://www.breakingbadapi.com/api/quote/random"
-    fetch(url)
-      .then((res) => res.json())
-      .then((quote) => setQuote(quote[0]))
-  }, [])
-
   return (
     <header>
       <div>
-        <strong>
-          Breaking bad <sub> <i>/ {title}</i></sub>
-        </strong>
-        <blockquote>
-          <p>{quote.quote}</p>
-          <cite>{quote.author}</cite>
-        </blockquote>
+        <Link href="/">
+          <a> Breaking bad <sub> <i>/ {title}</i></sub></a>
+        </Link>
       </div>
       <nav>
         <Link href="/">
